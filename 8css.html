@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .major{
+            display: flex;
+            flex-wrap: wrap;
+            background-image: linear-gradient(to right, black, rgba(114, 114, 114, 0));
+            
+        }
+        .minor1 , .minor3{
+            border: 2px solid black;
+            height: 350px;
+            padding: 30px;
+            flex-basis: 20%;
+            flex-grow: 0;
+            flex-shrink: 1;
+            font-size: 40px;
+            color: rgb(246, 246, 166);
+        }
+        .minor2 , .minor4{
+            border: 2px solid black;
+            height: 350px;
+            padding: 30px;
+            flex-basis: 80%;
+            flex-grow: 1;
+            flex-shrink: 0;
+            color: rgb(1, 44, 1);
+            font-size: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(246, 246, 166) ;
+        }
+        #grid {
+            display: grid;
+            grid-template-rows: auto auto auto;
+            grid-row-gap:20px ;
+            grid-column-gap: 20px;
+            background-image: radial-gradient(rgb(161, 140, 140), rgba(114, 114, 114, 0));
+        }
+        .item{
+            border: 2px solid black;
+            height: 50px;
+        }
+
+        .item1 , .item5{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .item2{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            height: 120px;
+        }
+
+        .item3, .item4{
+            grid-column-start: 2;
+            grid-column-end: 4; 
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="major">
+        <div class="minor1">Welcome to our site</div>
+        <div class="minor2"><h1>Something to read</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, saepe accusamus atque pariatur assumenda unde odit est modi tempore ipsam itaque officiis laboriosam aspernatur sequi iure quia. Nesciunt, ut corporis!</p></div>
+        <div class="minor3"><a href="7css.html" target="_blank">Feel free to inspect </a></div>
+        <div class="minor4"><h2>Something to understand</h2> <p>This is the 201.CSS course from udemy for learning intermediate CSS. I am trying to get myself better at CSS and other web development related topics which can help me land a job hopefully.</p></div>
+    </div> <br>
+    <div id="grid">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+    </div>
+</body>
+</html>

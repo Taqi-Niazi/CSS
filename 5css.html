@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fifth</title>
+    <style>
+        .overflow{
+            border: 1px solid black;
+            height: 300px;
+            width: 300px;
+            font-size: 50px;
+            overflow: auto;
+        }
+        .center{
+            border: 4px solid black;
+            height: 200px;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #parent .child{
+            height: 50px;
+            border: 2px solid black;
+        }
+        #parent > .child{
+            background-color: rgb(102, 255, 0);
+        }
+        #parent .child + .child{
+            height: 60px;
+            border: 3px solid red;
+        }
+        #parent .child ~ .child{
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <!--<div class="overflow">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum hic quo rem consectetur debitis porro quia voluptatem! Rem molestiae maxime laboriosam. Nihil excepturi fugiat iusto, unde repellat laboriosam. Nam, sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro amet, officiis dolore voluptatum ipsam expedita necessitatibus commodi optio. Ea aut praesentium necessitatibus debitis nesciunt possimus rerum dolores laudantium laboriosam esse? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia vero pariatur, deleniti fugit fugiat, explicabo eius nihil, distinctio quas iusto eaque sit? Quas repudiandae excepturi voluptas exercitationem? Ab, quos ipsam.
+        </p>
+    </div>
+    <div class="center">
+
+    </div>-->
+
+    <div class="child">orphan</div>
+
+    <div id="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+    <div class="child">orphan</div>
+
+</body>
+</html>

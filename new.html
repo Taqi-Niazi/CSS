@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 100px;
+        }
+        .top{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto auto auto auto; /* repeat(10, 1fr) is another similar way of writing this*/
+            width: min-content;
+        }
+        .line {
+            border: 1px solid black;
+            height: 0px;
+            width: 100px;
+        } 
+        .dot{
+            border: 1px solid black;
+            border-radius: 50%;
+            background-color: white;
+            height: 10px;
+            width: 10px;  
+            margin: 0px;
+            transform: scale(2);
+            position: relative;
+            top: -5px;
+        }
+
+        .flexx{
+            display: grid;
+            grid-template-columns: auto auto;
+            width:fit-content;
+        }
+        .straight{
+            border-right: 2px solid black;
+            height: 100px;
+            width: 227px;
+            position: relative;
+            left: -110px;
+        }
+        .flexx1{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            width:fit-content;
+        }
+        .straights{
+            border-right: 2px solid black;
+            height: 100px;
+            width: 228px;
+            position: relative;
+            left: -224px;
+        }
+        .tick{
+            display: grid;
+            grid-template-columns: repeat(3, 230px);
+            transform: translate(3px,0px);
+        }
+        .onetick , .twotick , .threetick{
+            border: 1px solid black;
+            height: 0px;
+            width: 20px;
+        }
+
+        .tick1{
+            display: grid;
+            grid-template-columns: repeat(2, 229px);
+            transform: translate(117px,0px);
+        }
+        .onetick1 , .twotick1{
+            border: 1px solid black;
+            height: 0px;
+            width: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div style="transform: scale(1.4); position: absolute; left: 30%;">
+        <div class="tick">
+            <div class="onetick"></div>
+            <div class="twotick"></div>
+            <div class="threetick"></div>
+        </div>
+        <div class="flexx1">
+            <div class="straights "></div>
+            <div class="straights "></div>
+            <div class="straights "></div>
+        </div>
+        <div class="top">
+            <div class="dot"></div>
+            <div class="line"></div>
+            <div class="dot"></div>
+            <div class="line"></div>
+            <div class="dot"></div>
+            <div class="line"></div>
+            <div class="dot"></div>
+            <div class="line" style="margin-right: 5px;"></div>
+            <div class="dot"></div>
+            <div class="line"></div>
+        </div>
+        
+    
+        <div class="flexx">
+            <div class="straight 1"></div>
+            <div class="straight 3"></div>
+        </div>
+        <div class="tick1">
+            <div class="onetick1"></div>
+            <div class="twotick1"></div>
+        </div>
+    </div>
+
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sixth</title>
+    <style>
+        
+        body{
+            background-image: linear-gradient(to left, rgba(0,0,0,0.2)0%, rgba(0,0,0,0.8)100%);
+        }/*
+        .pseudo{
+            border: 2px solid white;
+            height: 50px;
+        background-color: black;
+         }
+         .pseudo:not(.wala){
+            background-color: yellow;
+         }
+         .pseudo:nth-child(5){
+            background-color: pink;
+         }
+         .pseudo:hover{
+            background-color: green;
+         }*/
+
+         .pseudoelement{
+            height: 300px;
+            width: 300px;
+            border: 5px solid black;
+            margin: 50px auto;
+            position: relative;
+            background-color: blue;
+         }
+         .pseudoelement::before{
+            content: ' ';
+            display: block;
+            border: 5px solid rgb(255, 3, 3);
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1;
+            
+         }
+         .pseudoelement:hover::after{
+            content: ' ';
+            display: block;
+            border: 5px solid rgb(62, 255, 3);
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            z-index: -1;
+         }
+         .transition{
+            color: black;
+            font-size: 50px;
+            border: 1px solid black;
+            border-radius: 5px;
+            height: 80px;
+            width: 120px;
+            padding: 25px;
+            margin: 35px;
+            text-decoration: none;
+            transition: background-color  1s, color1.5s, padding 1s;
+         }
+         .transition:hover{
+            background-color: black;
+            color: white;
+            padding: 35px;
+         }
+
+    </style>
+</head>
+<body>
+    <!--<div class="pseudo"></div>
+    <div class="pseudo"></div>
+    <div class="pseudo"></div>
+    <div class="pseudo wala"></div>
+    <div class="pseudo"></div>
+    <div class="pseudo"></div>-->
+    <div class="pseudoelement"></div>
+    <a href="#" class="transition">Effect</a>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second</title>
+    <style>
+        div{
+            display: inline-block;
+            border: 5px solid black;
+            width: 200px;
+            height: 200px;
+        }
+        div.half{
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+
+            background-position: center;
+            background-size: cover;
+            border-radius: 50% 10% 50% 10%;
+            box-shadow: 6px 6px 4px black;
+        }
+        .half:hover{
+            background-image: url('https://wallpapercave.com/wp/wp3307431.jpg');
+            transition: 1s;
+        }
+        .half:not(:hover){
+            background-image: url('https://wallpapercave.com/wp/wp2665214.jpg');
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div>block element  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolore minima id consectetur rerum impedit totam, dolorem doloribus excepturi nisi qui magnam labore repellat accusantium hic corrupti consequuntur asperiores sed.
+    </div>
+    <div>also a block element Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ratione voluptatum laborum sit eaque accusamus maiores totam dolore aliquid sapiente assumenda nostrum saepe doloremque similique molestiae eligendi! Numquam, quas natus!</div>
+    <span>inline element</span><br> <br>
+    <div class="half"></div>
+</body>
+</html>
